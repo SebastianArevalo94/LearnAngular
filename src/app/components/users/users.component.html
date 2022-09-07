@@ -1,0 +1,52 @@
+<div class="globalDiv">
+  <h2 class="gobalTitle">Two Way Binding Example with OOP</h2>
+  <div class="contentDiv">
+    <div class="formDiv">
+      <h2>Create New User</h2>
+      <form>
+        <div>
+          <label for="">Name:</label>
+          <input type="text" [(ngModel)]="user.name" name="name" />
+        </div>
+        <div>
+          <label for="">Age:</label>
+          <input type="number" [(ngModel)]="user.age" name="age" />
+        </div>
+        <div>
+          <label for="">Nacionality:</label>
+          <select
+            name=""
+            id=""
+            [(ngModel)]="user.nacionality"
+            name="nacionality"
+          >
+            <option value="null" selected disabled>Choose</option>
+            <option
+              *ngFor="let nacionality of nacionalities"
+              value="{{ nacionality }}"
+            >
+              {{ nacionality }}
+            </option>
+          </select>
+        </div>
+        <button (click)="createPerson()">Create</button>
+      </form>
+    </div>
+
+    <div class="tableGlobal">
+      <h2>Users Table</h2>
+      <table>
+        <tr class="trHead">
+          <th>Name</th>
+          <th>Age</th>
+          <th>Nacionality</th>
+        </tr>
+        <tr class="trBody" *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.age }}</td>
+          <td>{{ user.nacionality }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

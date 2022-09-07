@@ -1,0 +1,52 @@
+.globalDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 15px;
+}
+.globalDiv h2 {
+  text-align: center;
+}
+.globalDiv .contentDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+.globalDiv .formDiv {
+  padding: 17px;
+  border-radius: 8px;
+  background-color: #00BBF9;
+  color: white;
+}
+.globalDiv .formDiv form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.globalDiv .formDiv form div {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.globalDiv .formDiv form div label {
+  margin: auto;
+}
+.globalDiv .formDiv form button {
+  width: 75px;
+  margin: auto;
+}
+.globalDiv .tableGlobal table .trHead {
+  background-color: #00BBF9;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+.globalDiv .tableGlobal table .trBody {
+  background-color: #00F5D4;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 17px;
+  padding: 5px;
+}/*# sourceMappingURL=users.component.css.map */
